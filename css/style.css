@@ -1,0 +1,426 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+* {
+  outline: 1px dotted #333;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+cite {
+  font-style: normal;
+}
+address {
+  font-style: normal;
+}
+/*
+Подключаемые шрифты:
+*/
+@font-face {
+  font-family: 'OpenSans';
+  src: url('/fonts/OpenSans/OpenSans.eot');
+  src: url('/fonts/OpenSans/OpenSans.eot#iefix') format('embedded-opentype'), url('/fonts/OpenSans/OpenSans.woff') format('woff'), url('/fonts/OpenSans/OpenSans.ttf') format('truetype'), url('/fonts/OpenSans/OpenSans.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('/fonts/OpenSans-Bold/OpenSans-Bold.eot');
+  src: url('/fonts/OpenSans-Bold/OpenSans-Bold.eot#iefix') format('embedded-opentype'), url('/fonts/OpenSans-Bold/OpenSans-Bold.woff') format('woff'), url('/fonts/OpenSans-Bold/OpenSans-Bold.ttf') format('truetype'), url('/fonts/OpenSans-Bold/OpenSans-Bold.svg') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('/fonts/OpenSans-Light/OpenSans-Light.eot');
+  src: url('/fonts/OpenSans-Light/OpenSans-Light.eot#iefix') format('embedded-opentype'), url('/fonts/OpenSans-Light/OpenSans-Light.woff') format('woff'), url('/fonts/OpenSans-Light/OpenSans-Light.ttf') format('truetype'), url('/fonts/OpenSans-Light/OpenSans-Light.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url('/fonts/OpenSans-Semibold/OpenSans-Semibold.eot');
+  src: url('/fonts/OpenSans-Semibold/OpenSans-Semibold.eot#iefix') format('embedded-opentype'), url('/fonts/OpenSans-Semibold/OpenSans-Semibold.woff') format('woff'), url('/fonts/OpenSans-Semibold/OpenSans-Semibold.ttf') format('truetype'), url('/fonts/OpenSans-Semibold/OpenSans-Semibold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GothamRounded-Book';
+  src: url('/fonts/GothamRounded-Book/GothamRounded-Book.eot');
+  src: url('/fonts/GothamRounded-Book/GothamRounded-Book.eot#iefix') format('embedded-opentype'), url('/fonts/GothamRounded-Book/GothamRounded-Book.woff') format('woff'), url('/fonts/GothamRounded-Book/GothamRounded-Book.ttf') format('truetype'), url('/fonts/GothamRounded-Book/GothamRounded-Book.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+Основная типографика:
+*/
+body {
+  font-size: 16px;
+  font-family: 'OpenSans';
+}
+.page-header__logo h1 {
+  font-family: 'GothamRounded-Book';
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+@media (min-width: 700px) {
+  .page-header__logo h1 {
+    font-size: 3.125rem;
+  }
+}
+.main-menu__list li {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+.offer-app__header {
+  font-family: 'OpenSans-Light';
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 320px) {
+  .offer-app__header {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 700px) {
+  .offer-app__header {
+    font-size: 3.125rem;
+  }
+}
+.download-app__link {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+@media (min-width: 700px) {
+  .download-app__link {
+    font-size: 1.3125rem;
+  }
+}
+.download-app__descr {
+  font-family: 'OpenSans-Light';
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 320px) {
+  .download-app__descr {
+    font-size: 1.125rem;
+  }
+}
+.features-app__header {
+  font-family: 'OpenSans-Light';
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 320px) {
+  .features-app__header {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 700px) {
+  .features-app__header {
+    font-size: 3.125rem;
+  }
+}
+.features-app__descr-list dt {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+@media (min-width: 700px) {
+  .features-app__descr-list dt {
+    font-size: 1.875rem;
+  }
+}
+.features-app__descr-list dd {
+  font-family: 'OpenSans-Light';
+  font-size: 0.875rem;
+}
+@media (min-width: 700px) {
+  .features-app__descr-list dd {
+    font-size: 1.125rem;
+  }
+}
+.review-app cite {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+@media screen and (min-width: 320px) {
+  .review-app cite {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 700px) {
+  .review-app cite {
+    font-size: 1.5rem;
+  }
+}
+.review-app p {
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 320px) {
+  .review-app p {
+    font-size: 1.125rem;
+  }
+}
+.price-app__descr strong {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 320px) {
+  .price-app__descr strong {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 700px) {
+  .price-app__descr strong {
+    font-size: 1.125rem;
+  }
+}
+.price-app__descr span {
+  font-family: 'OpenSans-Light';
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 320px) {
+  .price-app__descr span {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 700px) {
+  .price-app__descr span {
+    font-size: 1.5rem;
+  }
+}
+.price-app__descr small {
+  font-family: 'OpenSans-Semibold';
+  font-weight: normal;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+.price-app__descr td {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 320px) {
+  .price-app__descr td {
+    text-transform: none;
+  }
+}
+@media (min-width: 700px) {
+  .price-app__descr td {
+    font-size: 1.125rem;
+  }
+}
+.page-footer__header {
+  font-family: 'OpenSans-Light';
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 320px) {
+  .page-footer__header {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 700px) {
+  .page-footer__header {
+    font-size: 3.125rem;
+  }
+}
+.page-footer__contact {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+.page-footer__contact span {
+  font-family: 'OpenSans-Light';
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
