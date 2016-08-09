@@ -1,0 +1,32 @@
+//Для подключения шрифтов
+
+.font(@fontName; @urlName: @fontName; @weight: normal; @style: normal) {
+  font-family: '@{fontName}';
+  src: url('/fonts/@{urlName}/@{urlName}.eot');
+  src: url('/fonts/@{urlName}/@{urlName}.eot#iefix') format('embedded-opentype'),
+  url('/fonts/@{urlName}/@{urlName}.woff') format('woff'),
+    url('/fonts/@{urlName}/@{urlName}.ttf') format('truetype'),
+    url('/fonts/@{urlName}/@{urlName}.svg') format('svg');
+    font-weight: @weight;
+    font-style: @style;
+}
+
+//Различные расширения:
+
+.tablet(@rules) {
+  @media screen and (min-width: 320px) { @rules(); }
+}
+
+.desktop(@rules) {
+  @media (min-width: 700px) { @rules(); }
+}
+
+.big-desktop(@rules) {
+  @media (min-width: 1200px) { @rules(); }
+}
+
+//Верхний регистр:
+
+.upper() {
+  text-transform: uppercase;
+}
