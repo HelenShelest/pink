@@ -1,0 +1,179 @@
+/*
+Подключаемые шрифты:
+*/
+
+@font-face {
+  .font(@fontRegular);
+}
+@font-face {
+  .font(@fontRegular; @fontBold; bold);
+}
+@font-face {
+  .font(@fontLight);
+}
+@font-face {
+  .font(@fontSemibold);
+}
+@font-face {
+  .font(@fontPlus);
+}
+
+/*
+Основная типографика:
+*/
+body {
+  font-size: 16px;
+  font-family: @fontRegular;
+}
+
+.page-header__logo h1 {
+  font-family: @fontPlus;
+  font-size: 2rem;
+  .upper;
+  .desktop({
+    font-size: 3.125rem;
+  })
+}
+
+.main-menu__list li {
+  font-size: 1.125rem;
+  .upper;
+}
+
+.offer-app__header {
+  font-family: @fontLight;
+  font-weight: normal;
+  font-size: 1.5rem;
+  .tablet({
+    font-size: 2.5rem;
+  });
+  .desktop({
+    font-size: 3.125rem;
+  })
+}
+
+.download-app{
+  &__link {
+  font-weight: bold;
+  font-size: 1.125rem;
+    .desktop({
+      font-size: 1.3125rem;
+    })
+  }
+  &__descr {
+    font-family: @fontLight;
+    font-size: 0.875rem;
+    .tablet({
+      font-size: 1.125rem;
+    })
+  }
+}
+
+.features-app {
+  &__header {
+    font-family: @fontLight;
+    font-size: 1.5rem;
+    .tablet({
+      font-size: 2.5rem;
+    });
+    .desktop({
+      font-size: 3.125rem;
+    });
+  }
+  &__descr-list {
+    dt {
+      font-weight: bold;
+      font-size: 1.125rem;
+      .desktop({
+        font-size: 1.875rem;
+      })
+    }
+    dd {
+      font-family: @fontLight;
+      font-size: 0.875rem;
+      .desktop({
+        font-size: 1.125rem;
+      })
+    }
+  }
+}
+
+.review-app {
+  cite {
+    font-weight: bold;
+    font-size: 1.125rem;
+    .tablet({
+      font-size: 1.25rem;
+    });
+    .desktop({
+      font-size: 1.5rem;
+    });
+  }
+  p {
+    font-size: 0.875rem;
+    .tablet({
+      font-size: 1.125rem;
+    })
+  }
+}
+
+.price-app__descr {
+  strong {
+    font-size: 1.125rem;
+    .upper;
+    .tablet({
+      font-size: 1rem;
+    });
+    .desktop({
+      font-size: 1.125rem;
+    })
+  }
+  span {
+    font-family: @fontLight;
+    font-size: 1.5rem;
+    .tablet({
+      font-size: 1.125rem;
+    });
+    .desktop({
+      font-size: 1.5rem;
+    })
+  }
+  small {
+    font-family: @fontSemibold;
+    font-weight: normal;
+    font-size: 0.875rem;
+    .upper;
+  }
+  td {
+    font-size: 0.875rem;
+    .upper;
+    .tablet({
+      text-transform: none;
+    });
+    .desktop({
+      font-size: 1.125rem;
+    });
+  }
+}
+
+.page-footer {
+  &__header {
+  font-family: @fontLight;
+  font-size: 1.5rem;
+    .tablet({
+      font-size: 2.5rem;
+    });
+    .desktop({
+      font-size: 3.125rem;
+    });
+  }
+  &__contact {
+    font-weight: bold;
+    font-size: 1.125rem;
+    span{
+      font-family: @fontLight;
+      font-weight: normal;
+      font-size: 1.5rem;
+    }
+  }
+}
