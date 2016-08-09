@@ -7,8 +7,7 @@
   <meta name="keywords" content="Новое приложение, поднять настроение, изменить мир, завести друзей">
   <meta name="description" content="Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!">
   <meta name="author" content="Shelest">
-  <link href="/css/normalize.css" rel="stylesheet">
-  <link href="/css/style.css" rel="stylesheet">
+  <link href="/css/style.min.css" rel="stylesheet">
   <!--
   подключение иконки в голове закладки
   <link href="#" rel="shortcut icon">
@@ -26,17 +25,17 @@
     <a class="page-header__menu-toggle" href="#"></a>
     <nav class="main-menu">
       <ul class="main-menu__list">
-        <li class="main-menu__active-item"><a href="#">Информация</a></li>
-        <li><a href="#">Возможности</a></li>
-        <li><a href="#">Отзывы</a></li>
-        <li><a href="#">Стоимость</a></li>
+        <li><a href="#info">Информация</a></li>
+        <li><a href="#feature">Возможности</a></li>
+        <li><a href="#review">Отзывы</a></li>
+        <li><a href="#price">Стоимость</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="offer-app">
+    <section id="info" class="offer-app">
       <h2 class="offer-app__header">Взгляните на жизнь иначе!</h2>
-      <img src="#" alt="Pink in your phone">
+      <img src="#" alt="Pink в твоём телефоне">
       <div class="download-app">
         <a class="download-app__link" href="#" download="Pink.app">Скачать приложение</a>
         <span class="download-app__support download-app__support--apple"></span>
@@ -47,8 +46,8 @@
         </p>
       </div>
     </section>
-    <section class="features-app">
-        <h2 class="features-app_header">Устали от серости мегаполиса? <br>
+    <section id="feature" class="features-app">
+        <h2 class="features-app__header">Устали от серости мегаполиса? <br>
             Нам есть, что вам предложить!
         </h2>
         <dl class="features-app__descr-list">
@@ -59,13 +58,14 @@
           <dt>Заводит новых друзей</dt>
           <dd>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</dd>
         </dl>
-        <img src="#" alt="pink and smile">
+        <img src="#" alt="Смайлики в pink">
     </section>
-    <div class="review-app">
+    <div id="review" class="review-app">
       <blockquote class="review-app__active-item">
         <cite>Николай Петров</cite>
         <p>&quot;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&quot;</p>
       </blockquote>
+<!--
       <blockquote>
         <cite>Арина Комарова</cite>
         <p>&quot;Вокруг всё стало розовое! И это прекрасно!)&quot;</p>
@@ -74,6 +74,8 @@
         <cite>Игорь Астахов</cite>
         <p>&quot;Это то, чего так не хватало в серых буднях Питера!&quot;</p>
       </blockquote>
+-->
+<!--
       <form class="review-app__toggle" action="#" method="post">
         <label>
           <input type="radio" value="1">
@@ -85,22 +87,23 @@
           <input type="radio" value="3">
         </label>
       </form>
+-->
     </div>
-    <div class="price-app">
+    <div id="price" class="price-app">
       <table class="price-app__descr">
         <tr>
-          <th class="product product--free">
-            <strong class="product--free__name">Мини</strong>
-            <span class="product--free__price">0 USD</span>
+          <th class="product product--base">
+            <strong class="product--base__name">База</strong><br>
+            <span class="product--base__price">1,99 USD</span>
           </th>
           <th class="product product--standart">
             <small>Хит</small>
-            <strong class="product--standart__name">Стандарт</strong>
+            <strong class="product--standart__name">Стандарт</strong><br>
             <span class="product--standart__price">3,99 USD</span>
           </th>
           <th class="product product--max">
-            <strong class="product--max__name">Максимум</strong>
-            <span class="product--max__price">5,99 USD</span>
+            <strong class="product--max__name">Анлим</strong><br>
+            <span class="product--max__price">9,99 USD</span>
           </th>
         </tr>
         <tr>
@@ -119,6 +122,7 @@
           <td title="Есть">Комментарии</td>
         </tr>
       </table>
+<!--
        <form class="price-app__toggle" action="#" method="post">
         <label>
           <input type="radio" value="1">
@@ -130,6 +134,7 @@
           <input type="radio" value="3">
         </label>
       </form>
+-->
     </div>
   </main>
   <footer class="page-footer">
@@ -140,7 +145,7 @@
     <address class="page-footer__contact">
       <p>Звоните:
           <a class="#">
-            <span>8 (800) 1000 900</span>
+            <span>8&nbsp;(800)&nbsp;1000&nbsp;900</span>
           </a>
       </p>
       <p>Пишите:
