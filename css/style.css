@@ -177,6 +177,13 @@ td,
 th {
   padding: 0;
 }
+/*
+*
+*
+Базовый стили
+*
+*
+*/
 * {
   outline: 1px dotted #333;
 }
@@ -208,7 +215,11 @@ address {
   font-style: normal;
 }
 /*
+*
+*
 Подключаемые шрифты:
+*
+*
 */
 @font-face {
   font-family: 'OpenSans';
@@ -246,7 +257,11 @@ address {
   font-style: normal;
 }
 /*
+*
+*
 Основная типографика:
+*
+*
 */
 body {
   font-size: 16px;
@@ -427,4 +442,24 @@ body {
   font-weight: normal;
   font-size: 1.5rem;
   color: #d22856;
+}
+.main-menu__toggle-icon:before {
+  display: block;
+  content: '';
+  width: 50px;
+  border-bottom: 4px solid black;
+  margin-bottom: 6px;
+}
+@media (min-width: 700px) {
+  .main-menu__toggle-icon:before {
+    display: none;
+  }
+}
+.main-menu__list-hidden {
+  display: none;
+}
+@media (min-width: 700px) {
+  .main-menu__list-hidden {
+    display: block;
+  }
 }
