@@ -24,6 +24,7 @@
 body {
   font-size: 16px;
   font-family: @fontRegular;
+  color: @fontColor;
 }
 
 .page-header__logo h1 {
@@ -84,6 +85,7 @@ body {
     dt {
       font-weight: bold;
       font-size: 1.125rem;
+      color: @fontColorDark;
       .desktop({
         font-size: 1.875rem;
       })
@@ -102,6 +104,7 @@ body {
   cite {
     font-weight: bold;
     font-size: 1.125rem;
+    color: @fontColorDark;
     .tablet({
       font-size: 1.25rem;
     });
@@ -156,7 +159,7 @@ body {
   }
 }
 
-.page-footer {
+.contact {
   &__header {
   font-family: @fontLight;
   font-size: 1.5rem;
@@ -167,13 +170,14 @@ body {
       font-size: 3.125rem;
     });
   }
-  &__contact {
+  &__list {
     font-weight: bold;
     font-size: 1.125rem;
     span{
       font-family: @fontLight;
       font-weight: normal;
       font-size: 1.5rem;
+      color: @fontColorAddress;
     }
   }
 }

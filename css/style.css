@@ -180,6 +180,14 @@ th {
 * {
   outline: 1px dotted #333;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
 a {
   text-decoration: none;
 }
@@ -243,6 +251,7 @@ address {
 body {
   font-size: 16px;
   font-family: 'OpenSans';
+  color: #283645;
 }
 .page-header__logo h1 {
   font-family: 'GothamRounded-Book';
@@ -308,6 +317,7 @@ body {
 .features-app__descr-list dt {
   font-weight: bold;
   font-size: 1.125rem;
+  color: #000000;
 }
 @media (min-width: 700px) {
   .features-app__descr-list dt {
@@ -326,6 +336,7 @@ body {
 .review-app cite {
   font-weight: bold;
   font-size: 1.125rem;
+  color: #000000;
 }
 @media screen and (min-width: 320px) {
   .review-app cite {
@@ -393,34 +404,27 @@ body {
     font-size: 1.125rem;
   }
 }
-.page-footer__header {
+.contact__header {
   font-family: 'OpenSans-Light';
   font-size: 1.5rem;
 }
 @media screen and (min-width: 320px) {
-  .page-footer__header {
+  .contact__header {
     font-size: 2.5rem;
   }
 }
 @media (min-width: 700px) {
-  .page-footer__header {
+  .contact__header {
     font-size: 3.125rem;
   }
 }
-.page-footer__contact {
+.contact__list {
   font-weight: bold;
   font-size: 1.125rem;
 }
-.page-footer__contact span {
+.contact__list span {
   font-family: 'OpenSans-Light';
   font-weight: normal;
   font-size: 1.5rem;
-}
-html {
-  box-sizing: border-box;
-}
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
+  color: #d22856;
 }

@@ -41,6 +41,8 @@ optgroup{font-weight:700}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 *{outline:1px dotted #333}
+html{box-sizing:border-box}
+*,::after,::before{box-sizing:inherit}
 a{text-decoration:none}
 ol,ul{list-style-type:none}
 h1,h2{margin:0;padding:0;font-weight:400}
@@ -50,7 +52,7 @@ address,cite{font-style:normal}
 @font-face{font-family:OpenSans-Light;src:url(/fonts/OpenSans-Light/OpenSans-Light.eot);src:url(/fonts/OpenSans-Light/OpenSans-Light.eot#iefix) format('embedded-opentype'),url(/fonts/OpenSans-Light/OpenSans-Light.woff) format('woff'),url(/fonts/OpenSans-Light/OpenSans-Light.ttf) format('truetype'),url(/fonts/OpenSans-Light/OpenSans-Light.svg) format('svg');font-weight:400;font-style:normal}
 @font-face{font-family:OpenSans-Semibold;src:url(/fonts/OpenSans-Semibold/OpenSans-Semibold.eot);src:url(/fonts/OpenSans-Semibold/OpenSans-Semibold.eot#iefix) format('embedded-opentype'),url(/fonts/OpenSans-Semibold/OpenSans-Semibold.woff) format('woff'),url(/fonts/OpenSans-Semibold/OpenSans-Semibold.ttf) format('truetype'),url(/fonts/OpenSans-Semibold/OpenSans-Semibold.svg) format('svg');font-weight:400;font-style:normal}
 @font-face{font-family:GothamRounded-Book;src:url(/fonts/GothamRounded-Book/GothamRounded-Book.eot);src:url(/fonts/GothamRounded-Book/GothamRounded-Book.eot#iefix) format('embedded-opentype'),url(/fonts/GothamRounded-Book/GothamRounded-Book.woff) format('woff'),url(/fonts/GothamRounded-Book/GothamRounded-Book.ttf) format('truetype'),url(/fonts/GothamRounded-Book/GothamRounded-Book.svg) format('svg');font-weight:400;font-style:normal}
-body{font-size:16px;font-family:OpenSans}
+body{font-size:16px;font-family:OpenSans;color:#283645}
 .page-header__logo h1{font-family:GothamRounded-Book;font-size:2rem;text-transform:uppercase}
 @media (min-width:700px){.page-header__logo h1{font-size:3.125rem}}
 .main-menu__list li{font-size:1.125rem;text-transform:uppercase}
@@ -64,11 +66,11 @@ body{font-size:16px;font-family:OpenSans}
 .features-app__header{font-family:OpenSans-Light;font-size:1.5rem}
 @media screen and (min-width:320px){.features-app__header{font-size:2.5rem}}
 @media (min-width:700px){.features-app__header{font-size:3.125rem}}
-.features-app__descr-list dt{font-weight:700;font-size:1.125rem}
+.features-app__descr-list dt{font-weight:700;font-size:1.125rem;color:#000}
 @media (min-width:700px){.features-app__descr-list dt{font-size:1.875rem}}
 .features-app__descr-list dd{font-family:OpenSans-Light;font-size:.875rem}
 @media (min-width:700px){.features-app__descr-list dd{font-size:1.125rem}}
-.review-app cite{font-weight:700;font-size:1.125rem}
+.review-app cite{font-weight:700;font-size:1.125rem;color:#000}
 @media screen and (min-width:320px){.review-app cite{font-size:1.25rem}}
 @media (min-width:700px){.review-app cite{font-size:1.5rem}}
 .review-app p{font-size:.875rem}
@@ -83,10 +85,8 @@ body{font-size:16px;font-family:OpenSans}
 .price-app__descr td{font-size:.875rem;text-transform:uppercase}
 @media screen and (min-width:320px){.price-app__descr td{text-transform:none}}
 @media (min-width:700px){.price-app__descr td{font-size:1.125rem}}
-.page-footer__header{font-family:OpenSans-Light;font-size:1.5rem}
-@media screen and (min-width:320px){.page-footer__header{font-size:2.5rem}}
-@media (min-width:700px){.page-footer__header{font-size:3.125rem}}
-.page-footer__contact{font-weight:700;font-size:1.125rem}
-.page-footer__contact span{font-family:OpenSans-Light;font-weight:400;font-size:1.5rem}
-html{box-sizing:border-box}
-*,::after,::before{box-sizing:inherit}
+.contact__header{font-family:OpenSans-Light;font-size:1.5rem}
+@media screen and (min-width:320px){.contact__header{font-size:2.5rem}}
+@media (min-width:700px){.contact__header{font-size:3.125rem}}
+.contact__list{font-weight:700;font-size:1.125rem}
+.contact__list span{font-family:OpenSans-Light;font-weight:400;font-size:1.5rem;color:#d22856}
