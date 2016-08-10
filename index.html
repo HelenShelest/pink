@@ -92,39 +92,64 @@
       </form>
 -->
     </div>
-    <div id="price" class="price-app">
-      <table class="price-app__descr">
-        <tr>
-          <th class="product product--base">
-            <strong class="product--base__name">База</strong><br>
-            <span class="product--base__price">1,99 USD</span>
-          </th>
-          <th class="product product--standart">
-            <small>Хит</small>
-            <strong class="product--standart__name">Стандарт</strong><br>
-            <span class="product--standart__price">3,99 USD</span>
-          </th>
-          <th class="product product--max">
-            <strong class="product--max__name">Анлим</strong><br>
-            <span class="product--max__price">9,99 USD</span>
-          </th>
-        </tr>
-        <tr>
-          <td title="Есть">Розовый фильтр</td>
-          <td title="Есть">Розовый фильтр</td>
-          <td title="Есть">Розовый фильтр</td>
-        </tr>
-        <tr>
-          <td class="product__not-included" title="Нет">Смайлики</td>
-          <td title="Есть">Смайлики</td>
-          <td title="Есть">Смайлики</td>
-        </tr>
-        <tr>
-          <td class="product__not-included" title="Нет">Комментарии</td>
-          <td class="product__not-included" title="Нет">Комментарии</td>
-          <td title="Есть">Комментарии</td>
-        </tr>
-      </table>
+    <div id="price" class="product">
+      <ul class="product__list">
+        <li class="product__base">
+          <strong class="product__name">База</strong><br>
+          <span class="product__price">1,99 USD</span>
+          <ul>
+            <li class="product__included">
+              Розовый фильтр
+              <small>&ndash;есть</small>
+            </li>
+            <li class="product__not-included">
+              Смайлики
+              <small>&ndash;нет</small>
+            </li>
+            <li class="product__not-included">
+              Комментарии
+              <small>&ndash;нет</small>
+            </li>
+          </ul>
+        </li>
+        <li class="product__standart">
+          <small class="product__top">Хит</small>
+          <strong class="product__name">Стандарт</strong><br>
+          <span class="product__price">3,99 USD</span>
+          <ul>
+            <li class="product__included">
+              Розовый фильтр
+              <small>&ndash;есть</small>
+            </li>
+            <li class="product__included">
+              Смайлики
+              <small>&ndash;есть</small>
+            </li>
+            <li class="product__not-included">
+              Комментарии
+              <small>&ndash;нет</small>
+            </li>
+          </ul>
+        </li>
+        <li class="product__max">
+          <strong class="product__name">Анлим</strong><br>
+          <span class="product__price">9,99 USD</span>
+          <ul>
+            <li class="product__included">
+              Розовый фильтр
+              <small>&ndash;есть</small>
+            </li>
+            <li class="product__included">
+              Смайлики
+              <small>&ndash;есть</small>
+            </li>
+            <li class="product__included">
+              Комментарии
+              <small>&ndash;есть</small>
+            </li>
+          </ul>
+        </li>
+      </ul>
 <!--
        <form class="price-app__toggle" action="#" method="post">
         <label>

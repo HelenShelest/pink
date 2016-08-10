@@ -356,51 +356,51 @@ body {
     font-size: 1.125rem;
   }
 }
-.price-app__descr strong {
+.product__name {
   font-size: 1.125rem;
   text-transform: uppercase;
 }
 @media screen and (min-width: 320px) {
-  .price-app__descr strong {
+  .product__name {
     font-size: 1rem;
   }
 }
 @media (min-width: 700px) {
-  .price-app__descr strong {
+  .product__name {
     font-size: 1.125rem;
   }
 }
-.price-app__descr span {
+.product__price {
   font-family: 'OpenSans-Light';
   font-size: 1.5rem;
 }
 @media screen and (min-width: 320px) {
-  .price-app__descr span {
+  .product__price {
     font-size: 1.125rem;
   }
 }
 @media (min-width: 700px) {
-  .price-app__descr span {
+  .product__price {
     font-size: 1.5rem;
   }
 }
-.price-app__descr small {
+.product__top {
   font-family: 'OpenSans-Semibold';
   font-weight: normal;
   font-size: 0.875rem;
   text-transform: uppercase;
 }
-.price-app__descr td {
+.product__list li li {
   font-size: 0.875rem;
   text-transform: uppercase;
 }
 @media screen and (min-width: 320px) {
-  .price-app__descr td {
+  .product__list li li {
     text-transform: none;
   }
 }
 @media (min-width: 700px) {
-  .price-app__descr td {
+  .product__list li li {
     font-size: 1.125rem;
   }
 }

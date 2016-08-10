@@ -75,16 +75,16 @@ body{font-size:16px;font-family:OpenSans;color:#283645}
 @media (min-width:700px){.review-app cite{font-size:1.5rem}}
 .review-app p{font-size:.875rem}
 @media screen and (min-width:320px){.review-app p{font-size:1.125rem}}
-.price-app__descr strong{font-size:1.125rem;text-transform:uppercase}
-@media screen and (min-width:320px){.price-app__descr strong{font-size:1rem}}
-@media (min-width:700px){.price-app__descr strong{font-size:1.125rem}}
-.price-app__descr span{font-family:OpenSans-Light;font-size:1.5rem}
-@media screen and (min-width:320px){.price-app__descr span{font-size:1.125rem}}
-@media (min-width:700px){.price-app__descr span{font-size:1.5rem}}
-.price-app__descr small{font-family:OpenSans-Semibold;font-weight:400;font-size:.875rem;text-transform:uppercase}
-.price-app__descr td{font-size:.875rem;text-transform:uppercase}
-@media screen and (min-width:320px){.price-app__descr td{text-transform:none}}
-@media (min-width:700px){.price-app__descr td{font-size:1.125rem}}
+.product__name{font-size:1.125rem;text-transform:uppercase}
+@media screen and (min-width:320px){.product__name{font-size:1rem}}
+@media (min-width:700px){.product__name{font-size:1.125rem}}
+.product__price{font-family:OpenSans-Light;font-size:1.5rem}
+@media screen and (min-width:320px){.product__price{font-size:1.125rem}}
+@media (min-width:700px){.product__price{font-size:1.5rem}}
+.product__top{font-family:OpenSans-Semibold;font-weight:400;font-size:.875rem;text-transform:uppercase}
+.product__list li li{font-size:.875rem;text-transform:uppercase}
+@media screen and (min-width:320px){.product__list li li{text-transform:none}}
+@media (min-width:700px){.product__list li li{font-size:1.125rem}}
 .contact__header{font-family:OpenSans-Light;font-size:1.5rem}
 @media screen and (min-width:320px){.contact__header{font-size:2.5rem}}
 @media (min-width:700px){.contact__header{font-size:3.125rem}}

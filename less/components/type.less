@@ -120,8 +120,8 @@ body {
   }
 }
 
-.price-app__descr {
-  strong {
+.product {
+  &__name {
     font-size: 1.125rem;
     .upper;
     .tablet({
@@ -131,7 +131,7 @@ body {
       font-size: 1.125rem;
     })
   }
-  span {
+  &__price {
     font-family: @fontLight;
     font-size: 1.5rem;
     .tablet({
@@ -141,13 +141,13 @@ body {
       font-size: 1.5rem;
     })
   }
-  small {
+  &__top {
     font-family: @fontSemibold;
     font-weight: normal;
     font-size: 0.875rem;
     .upper;
   }
-  td {
+  &__list li li {
     font-size: 0.875rem;
     .upper;
     .tablet({
